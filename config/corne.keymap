@@ -143,8 +143,8 @@
             timeout-ms = <20>;
         };
 
-        UnderscoreSign {
-            bindings = <&kp UNDERSCORE>;
+        EqualSign {
+            bindings = <&kp EQUAL>;
             key-positions = <7 8>;
             timeout-ms = <20>;
         };
