@@ -119,27 +119,27 @@
         //    timeout-ms = <20>;
         //};
 
-        TildaSign {
-            bindings = <&kp TILDE>;
-            key-positions = <0 12>;
-            timeout-ms = <20>;
-        };
+        //TildaSign {
+        //    bindings = <&kp TILDE>;
+        //    key-positions = <0 12>;
+        //    timeout-ms = <20>;
+        //    };
 
-        GraveSign {
-            bindings = <&kp GRAVE>;
-            key-positions = <12 24>;
-            timeout-ms = <20>;
-        };
+        //    GraveSign {
+        //       bindings = <&kp GRAVE>;
+        //       key-positions = <12 24>;
+        //       timeout-ms = <20>;
+        //    };
 
         MinusSign {
             bindings = <&kp MINUS>;
-            key-positions = <3 4>;
+            key-positions = <2 3>;
             timeout-ms = <20>;
         };
 
         PlusSign {
             bindings = <&kp PLUS>;
-            key-positions = <2 3>;
+            key-positions = <8 9>;
             timeout-ms = <20>;
         };
 
@@ -149,9 +149,9 @@
             timeout-ms = <20>;
         };
 
-        PipeSign {
-            bindings = <&kp PIPE>;
-            key-positions = <8 9>;
+        UnderscoreSing {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <3 4>;
             timeout-ms = <20>;
         };
     };
@@ -165,7 +165,7 @@
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                   &kp ESC       &kp Q         &kp W         &kp E        &kp R         &kp T              &kp Y         &kp U         &kp I         &kp O         &kp P         &lt 3 LEFT_BRACKET
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp TAB       &kp A         &kp S         &kp D        &tdF          &kp G              &kp H         &tdJ          &kp K         &kp L         &kp SEMI      &kp SQT
+                  &kp TAB       &kp A         &kp S         &kp D        &kp F          &kp G              &kp H         &tdJ          &kp K         &kp L         &kp SEMI      &kp SQT
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                   &kp LSHFT     &kp Z         &kp X         &kp C        &kp V         &kp B              &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &mt RALT RIGHT_BRACKET
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
@@ -178,7 +178,7 @@
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                   &kp TILDE      &kp N1         &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &trans
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp GRAVE      &kp EXCL       &kp AT       &kp HASH      &kp DLLR     &kp PRCNT         &kp CARET     &kp AMPS      &kp ASTRK      &kp LPAR      &kp RPAR       &trans
+                  &kp GRAVE      &kp EXCL       &kp AT       &kp HASH      &kp DLLR     &kp PRCNT         &kp CARET     &kp AMPS      &kp ASTRK      &kp LPAR      &kp RPAR       &BSLH
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                   &kp LSHFT      &trans         &trans        &trans        &trans       &trans             &trans       &trans         &trans        &trans        &trans        &trans  
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
@@ -189,9 +189,9 @@
                 raise_layer {
                         bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                   &trans         &trans     &kp PG_UP      &kp UP        &kp PG_DN     &kp HOME          &kp CARET     &kp PG_UP     &kp UP        &kp PG_DN     &kp HOME     &trans
+                   &trans         &trans     &kp PG_UP      &kp UP        &kp PG_DN     &kp HOME          &trans        &kp PG_UP     &trans        &kp PG_DN     &kp HOME     &trans
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   &trans         &trans     &kp LEFT       &kp DOWN      &kp RIGHT     &kp END           &kp MINUS     &kp LEFT      &kp DOWN      &kp RIGHT     &kp END      &trans
+                   &trans         &trans     &kp LEFT       &kp DOWN      &kp RIGHT     &kp END           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp END      &trans
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &trans         &trans     &trans         &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans       &trans
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
