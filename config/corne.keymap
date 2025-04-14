@@ -10,14 +10,8 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <behaviors.dtsi>
 
-#define DEF 0
-#define LWR 1
-#define RSE 2
-#define FLR 3
-#define ADJ 4
-
-&lt { quick_tap_ms = <219>; };
-&mt { quick_tap_ms = <219>; };
+&lt { quick_tap_ms = <200>; };
+&mt { quick_tap_ms = <200>; };
 
 / {
     behaviors {
@@ -163,7 +157,7 @@
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                  &kp ESC        &kp Q         &kp W         &kp E        &kp R          &kp T            &kp Y         &kp U         &kp I         &kp O         &kp P         &lt 3 LEFT_BRACKET
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &kp TAB  &lh_pht LGUI A &lh_pht LALT S &lh_pht LSHFT D &lh_pht LCTRL F &kp G            &kp H &lh_pht RCTRL J &lh_pht RSHFT K &lh_pht RALT L  &lh_pht RGUI SEMI  &kp SQT
+                 &kp TAB        &mt LGUI A    &mt LALT S    &mt LSHFT D  &mt LCTRL F    &kp G            &kp H         &mt RCTRL J   &mt RSHFT K   &mt RALT L    &mt RGUI SEMI &kp SQT
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                  &kp LSHFT      &kp Z         &kp X         &kp C        &kp V          &kp B            &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RIGHT_BRACKET
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
